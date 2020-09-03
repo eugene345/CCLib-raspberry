@@ -362,6 +362,9 @@ class CCHEXFile:
 
 					#print "0x%06x : " % bAddr, "".join( "%02x " % x for x in bytes )
 
+				# Start Linear Address (not used)
+				elif bType == 0x05:
+
 				# Everything else raise error
 				else:
 					raise IOError("Line %i: Unknown record type %02x" % (i, bType))
